@@ -1,0 +1,468 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: url(../images/drew-coffman-1872.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 750px;
+  /* backdrop-filter: brightness(0.9); */
+  /*object-fit: cover;
+  object-position: 45% 40%;
+  */
+}
+/*For Header*/
+.head {
+  width: 100%;
+  position: fixed;
+  /* border: 1px solid black; */
+}
+/* For Logo */
+.head .logo {
+  width: 150px;
+  margin: 20px 0 0 100px;
+  /* border: 1px solid red; */
+  display: inline-block;
+}
+.head .logo img {
+  width: 100%;
+}
+/* For navbar */
+.head .list-items {
+  /* border: 1px solid green; */
+  width: 70%;
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  top: -10px;
+}
+.head .list-items ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.head .list-items ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Road Rage", cursive;
+  font-size: 1.7em;
+}
+.head .list-items ul li a:hover {
+  color: grey;
+}
+/* ======================================================= */
+
+/* For page Content */
+.content {
+  width: 100%;
+  height: 84vh;
+  /* border: 1px solid red; */
+  position: relative;
+  top: 85px;
+
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+.content h2 {
+  margin-top: 50px;
+  text-align: center;
+  color: #ccc;
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 70px;
+  padding: 25px;
+  text-align: center;
+}
+
+.content p {
+  color: #ccc;
+  font-size: 24px;
+  text-align: center;
+  /* margin-bottom: 40px; */
+}
+
+.content .btn-style {
+  /* text-align: center; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.content .btn-style button {
+  width: 100px;
+  height: 50px;
+  margin: 20px 0 0 20px;
+  color: white;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+button.effect-btn {
+  background: #8e7754;
+  border: none;
+  outline: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.trans-btn {
+  background-color: transparent;
+  outline: 1px solid white;
+  border: none;
+  cursor: pointer;
+}
+button.effect-btn:hover,
+button.trans-btn:hover {
+  background-color: #fff;
+  color: black;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.5s;
+}
+
+span {
+  margin-top: 20px;
+  width: 75px;
+  line-height: 70px;
+  height: 85px;
+  font-size: 60px;
+  align-self: center;
+  text-align: center;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+span a img {
+  width: 100%;
+}
+span a {
+  text-decoration: none;
+}
+span a:visited {
+  text-decoration: none;
+  color: white;
+}
+span a:active {
+  text-decoration: none;
+  color: white;
+}
+span a:link {
+  text-decoration: none;
+  color: white;
+}
+/* ================================== */
+.who-are-we {
+  width: 100%;
+
+  margin-top: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-self: center;
+  padding: 15px;
+  text-align: center;
+}
+.who-are-we .left-side {
+  display: inline-block;
+}
+.who-are-we .left-side img {
+  width: 500px;
+  margin: 20px;
+}
+
+.who-are-we .right-side {
+  display: inline-block;
+  align-self: center;
+  color: #686868;
+  line-height: 1.86em;
+  margin-bottom: 20px;
+  font-family: Alegreya Sans, sans-serif, monospace;
+  padding: 10px;
+}
+.who-are-we .right-side h2 {
+  color: #303030;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.who-are-we .right-side ul {
+  list-style: none;
+  text-align: left;
+}
+
+/* ================================== */
+
+.our-offer {
+  width: 100%;
+  background-color: rgb(245 245 245);
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.our-offer .offer-left-side {
+  display: inline-block;
+  align-self: center;
+  color: #686868;
+  line-height: 1.86em;
+  margin-bottom: 20px;
+  font-family: Alegreya Sans, sans-serif, monospace;
+  padding: 20px;
+  width: 49%;
+}
+
+.our-offer .offer-left-side h2 {
+  color: #303030;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.our-offer .offer-right-side {
+  display: inline-block;
+  width: 500px;
+  margin: 20px;
+}
+
+.our-offer .offer-right-side img {
+  width: 100%;
+}
+
+/* ================================== */
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: #303030;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.gallery p {
+  color: #686868;
+  line-height: 1.86em;
+  margin-bottom: 20px;
+  font-family: Alegreya Sans, sans-serif, monospace;
+}
+
+.gallery .sub-gallery {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .sub-gallery div {
+  width: calc(90% / 3);
+  margin: 20px;
+}
+
+.gallery .sub-gallery div img {
+  width: 350px;
+}
+
+.gallery .sub-gallery div p {
+  color: #686868;
+  line-height: 1.86em;
+  margin-bottom: 20px;
+  font-family: Alegreya Sans, sans-serif, monospace;
+}
+
+/* ================================== */
+.blog {
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  padding: 10px;
+}
+.blog .blog-left-side,
+.blog .blog-right-side {
+  width: 49%;
+  align-self: center;
+}
+.blog .blog-left-side h3 {
+  color: #303030;
+  text-align: left;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  
+}
+.blog .blog-left-side p {
+  color: #686868;
+  line-height: 1.86em;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  font-family: Alegreya Sans, sans-serif, monospace;
+}
+
+.blog .blog-left-side  ul {
+  list-style: none;
+  font-family: Alegreya Sans, sans-serif, monospace;
+  color: #686868;
+  font-weight: bold;
+  text-align: left;
+}
+.blog .blog-left-side ul li{
+  list-style: none;
+  font-family: Alegreya Sans, sans-serif, monospace;
+  color: #686868;
+  font-weight: normal ;
+  font-size: 1em;
+  
+  text-align: left;
+}
+
+/* ================================== */
+.contact {
+  width: 100%;
+  /* height: 400px; */
+  background-color: #403d38;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contact .one,
+.contact .two,
+.contact .three,
+.contact .four {
+  width: calc(90% / 4);
+  align-self: flex-start;
+  margin-top: 50px;
+}
+
+.contact .two ul,
+.contact .three ul,
+.contact .four ul {
+  list-style: none;
+}
+
+.contact .one h3,
+.contact .two h3,
+.contact .three h3,
+.contact .four h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 300;
+  text-align: left;
+  font-family: Alegreya Sans, sans-serif, monospace;
+}
+.contact .one p {
+  font-size: 18px;
+  color: #969696;
+  font-family: Alegreya Sans, sans-serif, monospace;
+}
+
+.contact .two ul li,
+.contact .three ul li,
+.contact .four ul li {
+  border-bottom: 1px solid #303030;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: block;
+  display: flex;
+  color: #969696;
+  font-size: 15px;
+  font-family: Alegreya Sans, sans-serif, monospace;
+}
+
+/* ================================== */
+.footer {
+  width: 100%;
+  background-color: #353330;
+  padding: 60px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  width: 300px;
+}
+
+.footer h4 {
+  font-size: 14px;
+  color: #969696;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* .footer .social-media {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+ 
+} */
+
+/**/
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 100px;
+}
+/* Style all font awesome icons */
+.fa,
+.bi {
+  padding: 25px;
+  font-size: 20px;
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+.fa-facebook,
+.fa-google-plus,
+.fa-linkedin-square,
+.fa-twitter {
+  background: #403d38;
+  color: white;
+}
